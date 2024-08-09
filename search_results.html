@@ -1,0 +1,46 @@
+<!doctype html>
+<!doctype html>
+<html lang="en">
+  <load ="./src/html/head.htm" title="Результаты поиска" styles="search_results" />
+
+  <body>
+    <div class="wrapper">
+      <load ="./src/html/header.htm" />
+      <main class="page">
+        <!-- <div class="preloader">
+          <span></span>
+        </div> -->
+        <section class="banner">
+          <div class="banner__bg">
+            <picture>
+              <source srcset="./src/images/banner.webp" type="image/webp" />
+              <img src="./src/images/banner.png" alt="background" />
+            </picture>
+
+            <div class="banner__oval">
+              <img src="./src/images/bannerOval.svg" alt="oval" />
+            </div>
+          </div>
+
+          <div class="banner__container">
+            <div class="banner__search">
+              <load ="./src/html/components/ui/search.html" title="Найти тур" />
+            </div>
+          </div>
+        </section>
+
+        <section class="result">
+          <div class="result__container">
+            <div class="result__header"></div>
+            <div class="result__calendar"></div>
+            <div class="result__content"></div>
+          </div>
+        </section>
+
+        <load ="./src/html/components/ui/offer.html" />
+      </main>
+      <load ="./src/html/footer.htm" />
+    </div>
+    <script type="module" src="src/ts/pages/search_results.ts"></script>
+  </body>
+</html>

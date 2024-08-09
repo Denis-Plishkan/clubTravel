@@ -1,0 +1,160 @@
+.drop-country {
+  position: relative;
+  height: 100%;
+
+  &__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    height: 100%;
+    font-family: "Roboto";
+    background: #fff;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &__county {
+    margin: 0 2px 0 16px;
+  }
+
+  &__tour {
+    margin-left: 4px;
+  }
+
+  &__btn-arrow {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 300ms ease 0s;
+  }
+
+  &__accordions {
+    position: absolute;
+    z-index: 100;
+    overflow: auto;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    padding: 5px;
+    width: 100%;
+    max-height: 380px;
+    background: #fff;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: all 300ms ease 0s;
+  }
+
+  &_active {
+    .drop-country {
+      &__accordions {
+        transform: scaleY(1);
+      }
+
+      &__btn-arrow {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+
+  &_bottom {
+    .drop-country {
+      &__accordions {
+        top: 43px;
+      }
+    }
+  }
+
+  &_top {
+    .drop-country {
+      &__accordions {
+        bottom: 43px;
+        transform-origin: 100% 100%;
+      }
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: #a9a9a9;
+  }
+}
+
+.accordion {
+  user-select: none;
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    padding: 0 10px;
+    height: 40px;
+    background: #fff;
+    transition: border 300ms ease 0s;
+    cursor: pointer;
+
+    svg {
+      fill: #a9a9a9;
+      transition: transform 300ms ease 0s;
+    }
+
+    &:hover {
+      @include media-breakpoint-up(md) {
+        border: 1px solid #f68521;
+
+        svg {
+          fill: #f68521;
+        }
+      }
+    }
+  }
+
+  &__list {
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: all 300ms ease 0s;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1px 0;
+      border-radius: 6px;
+      width: 100%;
+      height: 0;
+      opacity: 0;
+      transition: all 300ms ease 0s;
+      cursor: pointer;
+
+      &:hover {
+        @include media-breakpoint-up(md) {
+          color: #fff;
+          background: #f68521;
+        }
+      }
+    }
+  }
+
+  &_active {
+    .accordion {
+      &__btn {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+
+      &__list {
+        transform: scaleY(1);
+
+        li {
+          height: 40px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

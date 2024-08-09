@@ -1,0 +1,18 @@
+.map {
+    margin-bottom: 93px;
+    
+    &__iframe{
+        aspect-ratio: 2.92/1;
+        width: 100%;
+        max-width: 1157px;
+        margin: 0 auto;
+
+        @include media-breakpoint-down(sm) {
+            aspect-ratio: 1.67/1;
+
+            iframe{
+                border-radius: 10px;
+            }
+        }
+    }
+}

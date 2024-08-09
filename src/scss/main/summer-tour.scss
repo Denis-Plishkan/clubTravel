@@ -1,0 +1,304 @@
+.summer-tour {
+
+  &__container {
+    position: relative;
+    padding: 0;
+  }
+
+  &__text {
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+
+    @include media-breakpoint-down(xs) {
+      margin: 0 auto;
+      max-width: 316px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__swiper-wrapper {
+    position: relative;
+  }
+
+  &__card-wrapper {
+    padding: 1px;
+  }
+
+  &__card-data-wrapper {
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: #fff;
+    }
+    position: absolute;
+    left: 15px;
+    bottom: 14px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 7px 15px 7px 8px;
+    background: rgb(0 0 0 / 50%);
+    gap: 10px;
+  }
+
+  &__card-data {
+    font-size: 14px;
+    color: #fff;
+  }
+
+  &__card-data-top {
+    bottom: 56px;
+  }
+
+  &__card-place-wrapper {
+
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: #3e7739;
+    }
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__card-place {
+    font-size: 16px;
+    color: #222;
+  }
+
+  &__card-stars-wrapper {
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+    display: flex;
+  }
+
+  &__card-wrappers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    max-height: 83px;
+  }
+
+  &__card-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 16px 18px;
+  }
+
+  &__card-prices-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card-price-wrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    gap: 8px;
+  }
+
+  &__card-price-new {
+    span {
+      font-weight: 700;
+      color: #000;
+    }
+  }
+
+  &__card-price-old {
+    text-decoration: line-through;
+    color: #bfbfbf;
+  }
+
+  &__swiper-round {
+    display: flex;
+
+    @include media-breakpoint-up(my) {
+      &:hover {
+        &::before {
+          opacity: 0.4;
+        }
+      }
+    }
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.2s ease;
+      z-index: -1;
+      background: #3e7739;
+      opacity: 0.1;
+
+      @include media-breakpoint-down(my) {
+        background: #fff;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__swiper-button-next {
+
+    svg {
+      transform: rotate(180deg);
+    }
+    right: -5%;
+
+    @include media-breakpoint-down(my) {
+      right: 4%;
+    }
+
+    @include media-breakpoint-down(md) {
+      right: 6%;
+    }
+
+    @include media-breakpoint-down(xs) {
+      right: 10%;
+    }
+  }
+
+  &__swiper-button-prev {
+    left: -5%;
+
+    @include media-breakpoint-down(my) {
+      left: 4%;
+    }
+
+    @include media-breakpoint-down(md) {
+      left: 6%;
+    }
+
+    @include media-breakpoint-down(xs) {
+      left: 10%;
+    }
+  }
+
+  &__button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(md) {
+      &:hover {
+        a {
+          color: #f68521;
+        }
+      }
+    }
+
+    a {
+      transition: all 0.2s ease;
+      color: #555;
+      cursor: pointer;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+    height: 42px;
+    max-width: 248px;
+    color: #fff;
+
+    @include media-breakpoint-down(xs) {
+      max-width: 306px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-size: 26px;
+    gap: 7px;
+
+    @include media-breakpoint-down(xs) {
+      flex-direction: column;
+      margin-bottom: 14px;
+      gap: 4px;
+    }
+  }
+
+  &__swiper {
+    margin-bottom: 13px;
+    padding: 0 2px 10px 2px;
+
+  }
+
+  &__swiper-slide {
+    padding: 0 10px 15px;
+  }
+
+  &__card {
+    border-radius: 10px;
+    width: 100%;
+    height: 364px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+    background: #fff;
+  }
+
+  &__card-img {
+
+    img {
+      border-radius: 10px 10px 0 0;
+      height: 250px;
+    }
+    position: relative;
+  }
+  position: relative;
+  margin-bottom: 102px;
+
+  &__swiper-button-prev,
+  &__swiper-button-next {
+    position: absolute;
+    top: 50%;
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+
+    @include media-breakpoint-down(xs) {
+      top: 42%;
+    }
+
+    svg {
+      width: 32px;
+      height: 32px;
+      color: #3e7739;
+    }
+
+  }
+
+  @include media-breakpoint-down(xs) {
+    margin-bottom: 80px;
+  }
+}

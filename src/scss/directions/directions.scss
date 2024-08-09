@@ -1,0 +1,120 @@
+.directions {
+
+  position: relative;
+  top: -140px;
+  padding-top: 162px;
+  background: #fff;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 50px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 354px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px 26px;
+
+    @include media-breakpoint-down(xs) {
+      row-gap: 24px;
+    }
+  }
+
+  &__card-wrapper {
+    padding: 1px;
+  }
+
+  &__card {
+    border-radius: 10px;
+    width: 100%;
+    height: 372px;
+    max-width: 273px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+    background: #fff;
+
+    @include media-breakpoint-down(xs) {
+      max-width: 320px;
+    }
+  }
+
+  &__card-img {
+
+    img {
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+      height: 160px;
+    }
+    position: relative;
+  }
+
+  &__card-place-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 16px 16px;
+  }
+
+  &__card-place-town {
+    font-weight: 700;
+  }
+
+  &__card-place-country {
+    font-size: 12px;
+    color: #808080;
+  }
+
+  &__card-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__card-price-offer {
+    font-size: 12px;
+    color: #808080;
+  }
+
+  &__card-price-person {
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__card-season-wrapper {
+
+    svg {
+      width: 24px;
+      height: 22px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding: 12px 16px;
+    background: #f5f0f0;
+  }
+
+  &__card-season {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__card-season-start-end {
+    font-size: 12px;
+  }
+
+  &__btn {
+    margin: 0 auto;
+    height: 42px;
+    max-width: 248px;
+    color: #fff;
+
+    @include media-breakpoint-down(xs) {
+      max-width: 290px;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+<div class="dropdown">
+  <div class="dropdown__btn">
+    <span class="dropdown__btn-info">
+      <span class="dropdown__adults">Взрослых: <span id="adults-quantity">1</span>;</span>
+
+      <span class="dropdown__kids">детей: <span id="kids-quantity">0</span></span>
+    </span>
+    <svg class="dropdown__arrow"><use xlink:href="#chevron-left"></use></svg>
+  </div>
+
+  <div class="dropdown__main">
+    <h3 class="dropdown__title">Добавьте необходимое кол-во гостей и укажите возраст</h3>
+
+    <div class="dropdown__add dropdown__add-adults">
+      <span>Взрослый</span>
+
+      <div class="dropdown__count dropdown__count-one">
+        <div class="dropdown__count-btn dropdown__count-remove">
+          <svg class="dropdown__arrow">
+            <use xlink:href="#minus-circle"></use>
+          </svg>
+        </div>
+
+        <div class="dropdown__count-current">1</div>
+
+        <div class="dropdown__count-btn dropdown__count-add">
+          <svg class="dropdown__arrow">
+            <use xlink:href="#plus-circle"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown__add dropdown__add-kids">
+      <span>Ребёнок</span>
+
+      <div class="dropdown__count dropdown__count-two">
+        <div class="dropdown__count-btn dropdown__count-remove">
+          <svg class="dropdown__arrow">
+            <use xlink:href="#minus-circle"></use>
+          </svg>
+        </div>
+
+        <div class="dropdown__count-current">0</div>
+
+        <div class="dropdown__count-btn dropdown__count-add">
+          <svg class="dropdown__arrow">
+            <use xlink:href="#plus-circle"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown__children children"></div>
+
+    <div class="dropdown__button-add">Добавить</div>
+
+    <div class="dropdown__error">
+      <span class="dropdown__error-for-kids">Укажите возраст для всех детей!</span>
+
+      <span class="dropdown__error-for-abduls">Должен быть как минимум один взрослый</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,322 @@
+<div class="search">
+  <div class="search__row search__row-top">
+    <img class="search__row-svg"  src="./src/images/clock.svg" alt="clock" />
+    <h1 class="search__row-title">{=$title}</h1>
+  </div>
+
+  <div class="search__panel search__panel_bg">
+    <div class="search__panel-info info">
+      <div class="info__destination">
+        <p class="info__destination-text">Направление</p>
+        <div class="info__destination-select dropdown">
+          <div class="info__destination-row dropdown__row">
+            <p class="info__destination-current dropdown__current">Направление</p>
+            <svg class="info__destination-icon dropdown__icon">
+              <use xlink:href="#chevron-left"></use>
+            </svg>
+          </div>
+          <ul class="info__destination-list dropdown__list">
+            <li class="dropdown__item">Все направления</li>
+            <li class="dropdown__item">Египет</li>
+            <li class="dropdown__item">АОЭ</li>
+            <li class="dropdown__item">Таиланд</li>
+            <li class="dropdown__item">Болгария</li>
+            <li class="dropdown__item">Чорногория</li>
+            <li class="dropdown__item">Индонезия</li>
+            <li class="dropdown__item">Грузия</li>
+            <li class="dropdown__item">Греция</li>
+            <li class="dropdown__item">Турция</li>
+            <li class="dropdown__item">Кипр</li>
+            <li class="dropdown__item">Тунис</li>
+            <li class="dropdown__item">Испания</li>
+            <li class="dropdown__item">Украина</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info__duration">
+        <p class="info__duration-text info__destination-text">Длительность тура</p>
+        <div class="info__duration-select dropdown">
+          <div class="info__duration-row dropdown__row">
+            <p class="info__duration-current dropdown__current"></p>
+            <svg class="info__duration-icon dropdown__icon">
+              <use xlink:href="#chevron-left"></use>
+            </svg>
+          </div>
+          <ul class="info__duration-list dropdown__list">
+            <li class="dropdown__item">3 ночи</li>
+            <li class="dropdown__item">7 ночей</li>
+            <li class="dropdown__item">10 ночей</li>
+            <li class="dropdown__item">14 ночей</li>
+            <li class="dropdown__item">21 ночь</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info__date">
+        <p class="info__date-text info__destination-text">Дата вылета</p>
+        <div class="info__date-select dropdown">
+          <div class="info__date-row dropdown__row">
+            <p class="info__date-current dropdown__current"></p>
+            <img src="./src/images/calendar.png" alt="calendar" />
+          </div>
+          <ul class="info__date-list dropdown__list">
+            <li class="info__date-item dropdown__item">
+              <div class="info__date-calendar" id="calendar"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info__guests guests">
+        <p class="info__guests-text info__destination-text">Гости</p>
+        <div class="info__guests-select dropdown">
+          <div class="info__guests-row dropdown__row">
+            <p class="info__guests-current dropdown__current">
+              <span class="info__guests-adults">Взрослых:</span>
+              <span class="info__guests-counter">0</span>
+              <span class="info__guests-kids">детей:</span>
+              <span class="info__guests-subcounter">0</span>
+            </p>
+            <svg class="info__guests-icon dropdown__icon">
+              <use xlink:href="#chevron-left"></use>
+            </svg>
+          </div>
+          <ul class="info__guests-list dropdown__list">
+            <li class="info__guests-item">Добавьте необходимое кол-во гостей и укажите возраст</li>
+
+            <li class="info__guests-item info__guests-item_adults">
+              <div class="info__guests-subitem">
+                <p>Взрослых</p>
+                <div class="info__guests-subrow">
+                  <button class="info__guests-minus info__guests-minus_adults">
+                    <svg>
+                      <use xlink:href="#minus-circle"></use>
+                    </svg>
+                  </button>
+                  <span class="info__guests-counters info__guests-counters_adults">0</span>
+                  <button class="info__guests-plus info__guests-plus_adults">
+                    <svg>
+                      <use xlink:href="#plus-circle"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="info__guests-item info__guests-item_kids">
+              <div class="info__guests-subitem">
+                <p>Детей</p>
+
+                <div class="info__guests-subrow">
+                  <button class="info__guests-minus info__guests-minus_kids">
+                    <svg>
+                      <use xlink:href="#minus-circle"></use>
+                    </svg>
+                  </button>
+                  <span class="info__guests-counters info__guests-counters_kids"> 0 </span>
+                  <button class="info__guests-plus info__guests-plus_kids">
+                    <svg>
+                      <use xlink:href="#plus-circle"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="info__guests-item">
+              <button class="info__guests-add">Добавить</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <button class="search__panel-btn">
+      <svg>
+        <use xlink:href="#search"></use>
+      </svg>
+      Найти
+    </button>
+  </div>
+
+  <div class="search__row search__row-bottom">
+    <div class="search__row-sub">
+      <button class="search__btn">
+        <svg>
+          <use xlink:href="#zoom"></use>
+        </svg>
+        Расширенный поиск
+      </button>
+      <hr class="search__line search__line_act" />
+      <button class="search__btn-close search__btn-close_act">
+        <svg>
+          <use xlink:href="#minus-circle"></use>
+        </svg>
+        Закрыть
+      </button>
+    </div>
+    <div class="search__category category category_active">
+      <div class="category__item">
+        <div class="category__rating">
+          <div class="category__rating-stars">
+            <h2 class="category__title">Категория размещения</h2>
+
+            <button class="category__btns category__btns-stars">
+              <svg>
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg>
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg>
+                <use xlink:href="#star"></use>
+              </svg>
+            </button>
+
+            <button class="category__btns category__btns-stars">
+              <svg>
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg>
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg>
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg>
+                <use xlink:href="#star"></use>
+              </svg>
+            </button>
+
+            <button class="category__btns category__btns-stars">
+              <svg>
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg>
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg>
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg>
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg>
+                <use xlink:href="#star"></use>
+              </svg>
+            </button>
+
+            <button class="category__btns category__btns-stars">
+              <svg>
+                <use xlink:href="#house"></use>
+              </svg>
+              Апартаменты
+            </button>
+          </div>
+          <div class="category__rating-meal">
+            <h2 class="category__title">Питание</h2>
+
+            <button class="category__btns category__btns-meals">
+              <svg>
+                <use xlink:href="#check-circle"></use>
+              </svg>
+              Без питания
+            </button>
+
+            <button class="category__btns category__btns-meals">
+              <svg>
+                <use xlink:href="#check-circle"></use>
+              </svg>
+              Завтрак
+            </button>
+
+            <button class="category__btns category__btns-meals">
+              <svg>
+                <use xlink:href="#check-circle"></use>
+              </svg>
+              Затрак и ужин
+            </button>
+
+            <button class="category__btns category__btns-meals">
+              <svg>
+                <use xlink:href="#check-circle"></use>
+              </svg>
+              Завтрак, обед, ужин
+            </button>
+
+            <button class="category__btns category__btns-meals">
+              <svg>
+                <use xlink:href="#check-circle"></use>
+              </svg>
+              Всё включено
+            </button>
+
+            <button class="category__btns category__btns-meals">
+              <svg>
+                <use xlink:href="#check-circle"></use>
+              </svg>
+              Ультра: всё включено
+            </button>
+          </div>
+        </div>
+
+        <div class="category__fly">
+          <div class="category__lineup">
+            <h2 class="category__title">Состав тура</h2>
+            <button data-tour="tour" class="category__btns category__btns-tour">
+              <svg>
+                <use xlink:href="#check-circle"></use>
+              </svg>
+              Туристический пакет
+            </button>
+            <button data-tour="fly" class="category__btns category__btns-tour">
+              <svg>
+                <use xlink:href="#check-circle"></use>
+              </svg>
+              Только перелет
+            </button>
+          </div>
+          <div class="category__departure">
+            <h2 class="category__title">Вылет из</h2>
+            <button class="category__btns category__btns-city">
+              <svg>
+                <use xlink:href="#check-circle"></use>
+              </svg>
+              Киева
+            </button>
+
+            <button class="category__btns category__btns-city">
+              <svg>
+                <use xlink:href="#check-circle"></use>
+              </svg>
+              Львова
+            </button>
+          </div>
+          <div class="category__price">
+            <h2 class="category__title">Цена на одного человека</h2>
+            <div class="category__slider"></div>
+          </div>
+        </div>
+
+        <div class="category__regions">
+          <h2 class="category__title">Регион</h2>
+          <p class="category__regions-current"></p>
+          <div class="category__regions-item"></div>
+        </div>
+      </div>
+
+      <!-- <div class="category__filter">
+        <hr class="category__filter-line" />
+        <div class="category__filter-item">
+          <h3 class="category__filter-title">Активные фильтры:</h3>
+          <div class="category__filter-row">
+            <h3 class="category__filter-title category__filter-title_main">Категория</h3>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,64 @@
+<section class="authorization">
+  <div class="authorization__bg">
+    <picture>
+      <source srcset="/src/images/404/404.webp" type="image/webp" />
+      <img src="/src/images/404/404.png" alt="bg" />
+    </picture>
+  </div>
+
+  <div class="authorization__container">
+    <div class="authorization__form">
+      <div class="authorization__form-wrapper">
+      <h3 class="authorization__form-title">Войдите используя соц. сети</h3>
+      <button class="authorization__form-btn-facebook">
+        <picture>
+          <source srcset="/src/images/registration/btn-facebook/facebook.webp" type="image/webp" />
+          <img src="/src/images/registration/btn-facebook/facebook.png" alt="facebook" />
+        </picture>
+        Войти с помощью Facebook
+      </button>
+      <button class="authorization__form-btn-google">
+        <picture>
+          <source srcset="/src/images/registration/btn-google/google.webp" type="image/webp" />
+          <img src="/src/images/registration/btn-google/google.png" alt="google" />
+        </picture>
+        Войти с помощью Google
+      </button>
+      <form action="#" id="authorizationForm">
+        
+          <p class="authorization__form-text">или</p>
+
+          <div class="authorization__form-input authorization__form-input-mail">
+            <p>E-mail</p>
+
+            <input type="mail" id="authorizationMail" />
+            <p class="authorization__form-validate-text" id="authorizationMailText"></p>
+          </div>
+
+          <div class="authorization__form-input authorization__form-input-password">
+            <div class="authorization__form-input-text">
+              <p>Пароль</p>
+
+              <a href="../../../password_recovery.html">Забыли пароль?</a>
+            </div>
+
+            <input type="password" id="authorizationPassword" />
+
+            <p class="authorization__form-validate-text" id="authorizationPasswordText"></p>
+          </div>
+
+          <div class="authorization__btn-wrapper">
+            <a href="../../../registration.html">
+              <span class="authorization__btn-entry">регистрация</span>
+            </a>
+
+            <button type="submit" class="authorization__btn-registration btn">вход</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <p class="authorization__policy">Политика конфиденциальности</p>
+
+    <p class="authorization__policy">Политика использования</p>
+  </div>
+</section>

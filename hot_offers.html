@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <load ="./src/html/head.htm" title="Горящие предложения" styles="hot_offers" />
+  <body>
+    <div class="wrapper">
+      <load ="./src/html/header.htm" />
+      <main class="page">
+        <section class="banner">
+          <div class="banner__bg">
+            <picture>
+              <source srcset="./src/images/banner.webp" type="image/webp" />
+              <img src="./src/images/banner.png" alt="background" />
+            </picture>
+            <div class="banner__oval">
+              <img src="./src/images/bannerOval.svg" alt="oval" />
+            </div>
+          </div>
+          <div class="banner__container">
+            <div class="banner__content">
+              <load ="./src/html/components/ui/search.html" title="горящие предложения" />
+            </div>
+          </div>
+        </section>
+        <section class="hot-result">
+          <div class="hot-result__container">
+            <div class="hot-result__content">
+              <div class="hot-result__table table"></div>
+            </div>
+          </div>
+        </section>
+        <load ="./src/html/components/ui/offer.html" />
+      </main>
+      <load ="./src/html/footer.htm" />
+    </div>
+
+    <script type="module" src="./src/ts/pages/hot_offers.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,250 @@
+.registration {
+  position: relative;
+  height: 994px;
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    margin-top: 101px;
+    width: 100%;
+    height: 895px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__form {
+    margin: 0 auto;
+    margin-bottom: 18px;
+    padding-top: 218px;
+    min-height: 810px;
+    max-width: 427px;
+  }
+
+  &__form-wrapper {
+    border-radius: 10px;
+    padding: 32px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+    background: #fff;
+
+    @include media-breakpoint-down(xxxs) {
+      padding: 12px;
+    }
+  }
+
+  &__form-title {
+    margin-bottom: 33px;
+    font-size: 14px;
+    text-align: center;
+    color: #555;
+    opacity: 0.5;
+  }
+
+  &__form-btn-facebook {
+    position: relative;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    width: 100%;
+    height: 42px;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 15%);
+    text-align: center;
+    color: #fff;
+    background: #395185;
+    transition: all 0.3s ease;
+    pointer-events: none;
+
+    img {
+      position: absolute;
+      left: 11px;
+    }
+
+    @include media-breakpoint-up(md) {
+      &:hover {
+        color: #dab7b7;
+        background: #132b60;
+      }
+    }
+  }
+
+  &__form-btn-google {
+    position: relative;
+    margin-bottom: 32px;
+    border-radius: 6px;
+    width: 100%;
+    height: 42px;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 15%);
+    text-align: center;
+    color: #222;
+    background: #fff;
+    transition: all 0.3s ease;
+
+    img {
+      position: absolute;
+      left: 11px;
+    }
+
+    @include media-breakpoint-up(md) {
+      &:hover {
+        color: #132b60;
+        background: #dab7b7;
+      }
+    }
+  }
+
+  &__form-text {
+    position: relative;
+    margin-bottom: 28px;
+    font-size: 14px;
+    text-align: center;
+    color: #555;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 26px;
+      top: 50%;
+      width: 124px;
+      height: 1px;
+      background: #cacaca;
+
+      @include media-breakpoint-down(xs) {
+        right: 16px;
+        width: 93px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 26px;
+      top: 50%;
+      width: 124px;
+      height: 1px;
+      background: #cacaca;
+
+      @include media-breakpoint-down(xs) {
+        left: 16px;
+        width: 93px;
+      }
+    }
+  }
+
+  &__form-input {
+    p {
+      margin-bottom: 8px;
+      padding-left: 12px;
+      font-size: 13px;
+      color: #888;
+    }
+
+    input {
+      border: 1px solid #e2e2e2;
+      border-radius: 6px;
+      padding: 10px;
+      width: 100%;
+      height: 42px;
+    }
+  }
+
+  &__form-mail {
+    position: relative;
+
+    .just-validate-error-label {
+      position: absolute;
+      left: 4px;
+      bottom: -8px;
+      font-size: 14px;
+    }
+  }
+
+  &__form-password {
+    position: relative;
+
+    .just-validate-error-label {
+      position: absolute;
+      left: 4px;
+      bottom: -13px;
+      font-size: 14px;
+    }
+  }
+
+  &__form-repeat-password {
+    position: relative;
+
+    .just-validate-error-label {
+      position: absolute;
+      left: 4px;
+      bottom: -17px;
+      font-size: 14px;
+    }
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 13px;
+
+    a {
+      width: 100%;
+    }
+  }
+
+  &__btn-entry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f68521;
+    border-radius: 6px;
+    width: 100%;
+    height: 42px;
+    max-width: 175px;
+    text-transform: uppercase;
+    color: #222;
+    transition: all 0.3s ease;
+
+    @include media-breakpoint-up(md) {
+      &:hover {
+        color: #fff;
+        background: #f68521;
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 14px;
+    }
+  }
+
+  &__btn-registration {
+    height: 42px;
+    max-width: 175px;
+  }
+
+  &__policy {
+    text-align: center;
+    text-decoration: underline;
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+
+    @include media-breakpoint-up(md) {
+      &:hover {
+        color: #dab7b7;
+      }
+    }
+  }
+}
+
+#registrationMail {
+  margin-bottom: 7px;
+}
+
+#registrationRepeatPasswordText {
+  margin-bottom: 30px;
+}
+

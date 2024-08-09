@@ -1,0 +1,59 @@
+<section class="registration">
+  <div class="registration__bg">
+    <picture>
+      <source srcset="/src/images/404/404.webp" type="image/webp" />
+      <img src="/src/images/404/404.png" alt="bg" />
+    </picture>
+  </div>
+  <div class="registration__container">
+    <div class="registration__form">
+      <div class="registration__form-wrapper">
+        <h3 class="registration__form-title">Зарегистрируйтесь используя соц. сети</h3>
+        <button class="registration__form-btn-facebook">
+          <picture>
+            <source srcset="/src/images/registration/btn-facebook/facebook.webp" type="image/webp" />
+            <img src="/src/images/registration/btn-facebook/facebook.png" alt="facebook" />
+          </picture>
+          Войти с помощью Facebook
+        </button>
+        <button class="registration__form-btn-google">
+          <picture>
+            <source srcset="/src/images/registration/btn-google/google.webp" type="image/webp" />
+            <img src="/src/images/registration/btn-google/google.png" alt="google" />
+          </picture>
+          Войти с помощью Google
+        </button>
+        <form action="#" id="registrationForm">
+          <p class="registration__form-text">или</p>
+
+          <div class="registration__form-input registration__form-mail">
+            <p>E-mail</p>
+            <input type="mail" id="registrationMail" name="mail" />
+            <p class="registration__form-validate-text" id="registrationMailText"></p>
+          </div>
+
+          <div class="registration__form-input registration__form-password">
+            <p>Пароль</p>
+            <input type="password" id="registrationPassword" name="password" />
+            <p class="registration__form-validate-text" id="registrationPasswordText"></p>
+          </div>
+
+          <div class="registration__form-input registration__form-repeat-password">
+            <p>Повторите пароль</p>
+            <input type="password" id="registrationRepeatPassword" />
+            <p class="registration__form-validate-text" id="registrationRepeatPasswordText"></p>
+          </div>
+
+          <div class="registration__btn-wrapper">
+            <a href="../../../authorization.html">
+              <p class="registration__btn-entry">вход</p>
+            </a>
+            <button type="submit" class="registration__btn-registration btn">регистрация</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <p class="registration__policy">Политика конфиденциальности</p>
+    <p class="registration__policy">Политика использования</p>
+  </div>
+</section>

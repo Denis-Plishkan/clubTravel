@@ -1,0 +1,302 @@
+.offer {
+  height: 570px;
+  background-image: url("/src/images/offer/offerBaner.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-down(md) {
+    height: 923px;
+    background-image: url("/src/images/offer/offerBannerMob.png");
+  }
+
+  &__container {
+    @include media-breakpoint-down(xxs) {
+      padding: 0 10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    padding-top: 80px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-size: 26px;
+    color: #fff;
+
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 26px;
+      padding-top: 30px;
+    }
+
+    @include media-breakpoint-down(xxs) {
+      margin: 0 auto 15px;
+      width: 100%;
+      max-width: 240px;
+    }
+  }
+
+  &__text {
+    margin: 0 auto 95px;
+    width: 100%;
+    max-width: 592px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+
+    @include media-breakpoint-down(xs) {
+      margin: 0 auto 32px;
+    }
+
+    @include media-breakpoint-down(xxs) {
+      margin: 0 auto 20px;
+      max-width: 340px;
+   
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2% 0 8%;
+
+    @include media-breakpoint-down(md) {
+      display: block;
+      padding: 0;
+    }
+  }
+
+  &__request {
+    &-text {
+      margin-bottom: 38px;
+      width: 100%;
+      max-width: 380px;
+      font-weight: 400;
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+      @include media-breakpoint-down(xxs) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-link {
+      display: inline-block;
+      border-radius: 6px;
+      padding: 12px 53px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      font-size: 14px;
+      color: #fff;
+      background: #f68521;
+
+      @include media-breakpoint-down(xs) {
+        padding: 12px 32px;
+      }
+
+      @include media-breakpoint-down(xxs) {
+        padding: 12px 10px;
+        text-align: center;
+      }
+    }
+    margin-top: 27px;
+    padding-left: 11px;
+
+    @include media-breakpoint-down(md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0;
+    }
+  }
+
+  &__or {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    margin-right: 9px;
+
+    &::before {
+      bottom: 30px;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      margin: 12px 0;
+      width: 77px;
+      height: 1px;
+      transform: rotate(90deg);
+      background: #fff;
+    }
+
+    &::after {
+      top: 31px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin: 32px auto;
+      width: 100%;
+      max-width: 200px;
+
+      &::before {
+        right: 0;
+        bottom: auto;
+      }
+
+      &::before,
+      &::after {
+        transform: rotate(0deg);
+      }
+
+      &::after {
+        left: 0;
+        top: auto;
+      }
+    }
+  }
+
+  &__assistant {
+    margin-right: 6px;
+    &-text {
+      margin-bottom: 16px;
+      font-weight: 400;
+      font-size: 18px;
+      color: #fff;
+
+      @include media-breakpoint-down(xxs) {
+        margin-left: 16px;
+      }
+    }
+
+    &-row {
+      display: flex;
+
+      @include media-breakpoint-down(xs) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        @include media-breakpoint-down(xxs) {
+          margin-left: 16px;
+        }
+      }
+    }
+
+    &-img {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      margin-top: 9px;
+      width: 207px;
+      height: 152px;
+
+      @include media-breakpoint-down(xs) {
+        margin-top: 0;
+        width: 270px;
+        height: 181px;
+      }
+    }
+
+    &-column {
+      margin-left: 32px;
+
+      @include media-breakpoint-down(xs) {
+        margin-top: 16px;
+        margin-left: 0;
+      }
+    }
+
+    &-name {
+      margin-bottom: 4px;
+      font-weight: 400;
+      font-size: 22px;
+      color: #fff;
+    }
+
+    &-info {
+      margin-bottom: 25px;
+      font-weight: 400;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    &-social {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 88px;
+
+      @include media-breakpoint-down(xs) {
+        height: 104px;
+      }
+    }
+
+    &-link {
+      svg {
+        margin-right: 12px;
+        width: 24px;
+        height: 24px;
+        fill: #fff;
+        fill-opacity: 0.5;
+      }
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    @include media-breakpoint-down(md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      @include media-breakpoint-down(xxs) {
+        align-items: flex-start;
+      }
+    }
+  }
+  
+  height: 570px;
+  background-image: url("/src/images/offer/offerBaner.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-down(md) {
+    height: 923px;
+    background-image: url("/src/images/offer/offerBannerMob.png");
+  }
+
+  @include media-breakpoint-down(md) {
+    height: 923px;
+    background-image: url("../../../../src/images/offer/offerBannerMob.png");
+  }
+
+  @include media-breakpoint-down(md) {
+    height: 923px;
+    background-image: url("../../../../src/images/offer/offerBannerMob.png");
+  }
+}
+
+.top {
+  position: absolute;
+  top: 0;
+}

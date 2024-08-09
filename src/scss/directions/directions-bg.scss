@@ -1,0 +1,47 @@
+.directions-bg {
+  max-height: 554px;
+
+  &__container {
+    position: relative;
+    z-index: 2;
+    top: -194px;
+
+    @include media-breakpoint-down(md) {
+      top: -160px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      top: -70px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      top: -4px;
+    }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      height: clamp(516px, 50%, 240px);
+      min-height: 240px;
+      max-height: 516px;
+      object-fit: cover;
+    }
+  }
+
+  &__line {
+    position: absolute;
+    left: 0;
+    bottom: 96px;
+    width: 100%;
+    height: 61px;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  &__img {
+    position: relative;
+  }
+}
