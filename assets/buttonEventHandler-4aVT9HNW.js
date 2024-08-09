@@ -1,0 +1,1 @@
+class o{buttonClass;instance;method;constructor(t,s,n){this.buttonClass=t,this.instance=s,this.method=n,this.addButtonListener()}addButtonListener(){const t=document.querySelector(this.buttonClass);t?t.addEventListener("click",()=>{const s=this.instance[this.method];s()}):console.error(`Button with class ${this.buttonClass} not found`)}}export{o as B};
